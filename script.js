@@ -22,3 +22,24 @@ function eventSubmitHandler(event) {
     event.target.reset();
 }
 
+function addEventCard(data) {
+    let list = document.getElementById("eventsList");
+
+    if (list.innerHTML.includes("No events")) {
+        list.innerHTML = "";
+    }
+
+    let eventDiv = document.createElement("div");
+    eventDiv.className = "event";
+
+    eventDiv.innerHTML = `
+        <button class="delete-btn" onclick="deleteEvent(this)">×</button>
+        <h4>${data.title}</h4>
+        <div class="date">📅 ${data.date}</div>
+        <div class="badge">${data.category}</div>
+        <p>${data.description}</p>
+    `;
+
+    list.appendChild(eventDiv);
+}
+
