@@ -85,3 +85,47 @@ textarea {
     border-radius: 6px;
     cursor: pointer;
 }
+#eventsList {
+    margin-top: 10px;
+}
+
+/* EVENT CARD */
+.event {
+    background: #dab547;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.event h4 {
+    margin: 0;
+}
+
+.date {
+    margin: 5px 0;
+}
+
+.badge {
+    display: inline-block;
+    background: #3f51b5;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.delete-btn {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}   
+
